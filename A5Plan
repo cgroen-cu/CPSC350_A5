@@ -1,0 +1,53 @@
+tree node/classes tree holds should be able to print and read info to file to build
+
+Student class
+-info-
+int ID
+string Name
+string Level
+string major 
+double GPA 
+int Advisor (faculty ID Number)
+-methods
+print()
+getAdvisor() - returns facutly advisor ID
+changeAdvisor(int ID) - changes advisor ID
+
+Faculty Class
+-info
+int ID 
+string name
+string level
+string Department
+linked list of ints (student ids)
+-methods
+print() - prints all the student info
+getAdvisees() - returns advisees ID's
+addAdvisee(int studentID) - adds student to advisee list
+removeAdvisee(int studentID) - removes student from advisee list
+
+BST
+-extra methods
+printAll - traverses through whole tree, calling each nodes print all method. Should do so sorted by ID#
+
+StudentTable
+-holds
+student tree
+faculty tree
+-methods
+setUp - called when program starts - read through files, contruct tree based on info printed in file.
+- program - different Method for each command - then just takes in input and calls related method/asks for info -
+1. Print All student tree (calls tree print all function - prints student info sorted by ID num)
+2. print all faculty tree (calls tree print all function - prints student info sorted by ID num)
+3.Find and display student information given the students id
+4.Find and display faculty information given the faculty id
+5.Given a student’s id, print the name and info of their faculty advisor
+6.Given a faculty id, print ALL the names and info of his/her advisees.
+7.Add a new student - create new student with advisor ID - adds them to a faculty advisee list
+8.Delete a student given the id - gets student's advisor ID and then goes and removes them from their advisee list - then delete student
+9.Add a new faculty member - creates new faculty object - adds to tree
+10.Delete a faculty member given the id. - Deletes faculty member and then also takes all of the advisee student's ID's. Then gets those students and changes their advisors.
+11.Change a student’s advisor given the student id and the new faculty id. - takes an int of student id - finds the node and then gets its old advisor - removes its student ID from the advisor's list - then goes back to student to call changeAdvisor method
+12.Remove an advisee from a faculty member given the ids - takes an int of faculty id and student id and removes them both
+13.Rollback - stack holding old tree - commands adjusting tree structure create a copy of old tree placed on the stack before doing adjustments
+14.Exit - calls PrintAll Students to student tree file and printAllFaculty to facutly tree file.
