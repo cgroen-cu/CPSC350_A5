@@ -36,6 +36,7 @@ student tree
 faculty tree
 -methods
 setUp - called when program starts - read through files, contruct tree based on info printed in file.
+      - needs to read through faculty file first, so students can be created with their advisors. 
 - program - different Method for each command - then just takes in input and calls related method/asks for info -
 1. Print All student tree (calls tree print all function - prints student info sorted by ID num)
 2. print all faculty tree (calls tree print all function - prints student info sorted by ID num)
@@ -51,3 +52,5 @@ setUp - called when program starts - read through files, contruct tree based on 
 12.Remove an advisee from a faculty member given the ids - takes an int of faculty id and student id and removes them both
 13.Rollback - stack holding old tree - commands adjusting tree structure create a copy of old tree placed on the stack before doing adjustments
 14.Exit - calls PrintAll Students to student tree file and printAllFaculty to facutly tree file.
+
+
