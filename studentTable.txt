@@ -1,0 +1,24 @@
+Bob Jim
+ID: 123
+Level: Freshman
+Major: AVFX
+GPA: 4.000000
+Advisor ID: 444
+Bilbo
+ID: 665
+Level: Senior
+Major: Hobbit
+GPA: 1.200000
+Advisor ID: 444
+Fat Tony
+ID: 1300
+Level: Freshman
+Major: AVFX
+GPA: 4.000000
+Advisor ID: 444
+Samson
+ID: 1400
+Level: Freshman
+Major: AVFX
+GPA: 4.000000
+Advisor ID: 444
